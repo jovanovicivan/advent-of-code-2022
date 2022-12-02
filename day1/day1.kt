@@ -1,9 +1,11 @@
+package day1
+
 import java.io.File
 
 fun part1() {
     var max = 0
     var maxSoFar = 0
-    File("day1.txt")
+    File("day1/day1.txt")
         .forEachLine {
             if (it.isEmpty()) {
                 if (maxSoFar > max) {
@@ -21,7 +23,7 @@ fun part2() {
     val arrayOfMaxNumbers = intArrayOf(0, 0, 0)
     var minimumElementIndex = 0
     var maxSoFar = 0
-    File("day1.txt")
+    File("day1/day1.txt")
         .forEachLine {
             if (it.isEmpty()) {
                 if (maxSoFar > arrayOfMaxNumbers[minimumElementIndex]) {
